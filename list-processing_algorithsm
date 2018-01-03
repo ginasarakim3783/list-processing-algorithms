@@ -1,0 +1,60 @@
+nums = [19, 5, 9, 12, 4, 2, 8, 11, 4, 17, 4]
+
+# count occruences
+''' count fours '''
+count = 0
+
+for n in nums:
+    if n == 4:
+        count += 1
+
+print(count)
+
+''' count evens '''
+count = 0
+
+for n in nums:
+    if n % 2 == 0:
+        count += 1
+
+print(count)
+
+
+# find the sum (would you be able to find the sum of only odd values?)
+total = 0
+
+for n in nums:
+    total += n
+
+print(total)
+
+'''
+Note: Python has a sum function, so the statement below
+      also works. However, you should still understand the
+      algorithm which uses a loop.
+'''
+
+total = sum(nums)
+print(total)
+
+
+# find max value (how would you modify this to find the min?)
+
+high = nums[0]
+
+for n in nums:
+    if n > high:
+        high = n
+
+print(high)
+
+'''
+Note: Python has max and min functions, so the statements below
+      also work. However, you should still understand the
+      algorithm which uses a loop.
+'''
+
+high = max(nums)
+low = min(nums)
+print(high)
+print(low)
